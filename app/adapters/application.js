@@ -1,4 +1,4 @@
-import Ember from 'ember'
+import Ember from 'ember';
 import JSONAPIAdapter from 'ember-data/adapters/json-api';
 
 const{String:{pluralize, underscore}} = Ember;
