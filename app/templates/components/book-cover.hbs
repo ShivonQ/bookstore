@@ -3,4 +3,19 @@
     <em>by</em>
     {{book.author.name}}
 </li>
+
+{{#if isShowingModal}}
+    {{#modal-dialog close="close" clickOutSideToClose=true}}
+        <div class="modal">
+            <h3> Purchase Confirmation</h3>
+            You want to buy <strong>{{books.title}}</strong> by {{book.author.name}}.
+            <p>
+                <button {{action "close"}}>Purchase for ${{book.price}}!</button>
+            </p>
+            <p>
+                <em>Thank you! We will e-mail you your e-book.</em>
+            </p>
+        </div>
+    {{/modal-dialog}}
+{{/if}}
 {{yield}}
