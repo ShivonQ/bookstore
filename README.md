@@ -10,7 +10,7 @@
 ## ----------------------------
 
 ## -You will need the following repos for this to function correctly
-Rails App:
+That App (Rails):
 https://github.com/shivonq/bookstore-api
 
 This App (Ember):
