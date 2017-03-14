@@ -8,7 +8,7 @@ export default Ember.Route.extend({
       }
     },
     model(params){
-        return this.store.findAll('book',params);
+        return this.store.query('book',params);
     },
     actions: {
         showAll(){
